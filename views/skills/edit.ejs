@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+    <label for="">
+        Level: 
+        <input type="number" name="level" value="<%= skill.level %>">
+    </label>
+    <button type="submit">Update Skill</button>
+</form>
+
+<%- include('../partials/footer') %>
